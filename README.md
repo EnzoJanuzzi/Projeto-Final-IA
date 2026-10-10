@@ -61,8 +61,8 @@ Os dados foram gerados via simulações DFT (VASP) para diferentes geometrias e 
 | --- | --- | --- | --- |
 | `e_fermi_eV` | Contínua | $\text{eV}$ | Energia do nível de Fermi do sistema catalítico obtida do cálculo eletrônico. |
 | `d_band_center_Ru_eV` | Contínua | $\text{eV}$ | Centro da banda $d$ dos átomos de rutênio, métrica clássica para reatividade em catálise heterogênea. |
-| `binding_distance_A` | Contínua | $\text{\AA}$ | Distância de ligação mínima entre o adsorbato e a superfície da nanopartícula. |
-| `adsorbate_total_mag` / `total_mag_muB` | Contínua | $\mu_B$ | Momento magnético total do sistema/adsorbato integrado a partir do `OUTCAR`/`OSZICAR`[cite: 1, 3]. |
+| `binding_distance_A` | Contínua | $\text{Å}$ | Distância de ligação mínima entre o adsorbato e a superfície da nanopartícula. |
+| `adsorbate_total_mag` / `total_mag_muB` | Contínua | $\mu_B$ | Momento magnético total do sistema/adsorbato integrado a partir do `OUTCAR`/`OSZICAR`. |
 | `adsorption_site` | Categórica | Texto (`top`, `bridge`, `hollow`) | Topologia local do sítio onde a molécula se ancorou na faceta da nanopartícula. |
 | `pathway` | Categórica | Texto (`N-down`, `O-down`) | Orientação molecular de aproximação do intermediário químico à superfície. |
 | `intermediate` | Categórica | Fórmula química | Espécie intermediária ligada à partícula (ex.: $\text{NO}$, $\text{HNO}$, $\text{NH}_2$, $\text{OH}$). |
