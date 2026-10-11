@@ -79,7 +79,7 @@ O fluxo utiliza Scikit-Learn estruturado via `ColumnTransformer` para evitar vaz
 ```
 [Dados Brutos DFT (N-down + O-down)]
        │
-       ├─► Split Estratificado/Aleatório (Train / Test)
+       ├─► Split dos dados (Train / Test)
        │
        ├─► Colunas Contínuas ────► StandardScaler (μ=0, σ=1)
        │
@@ -98,7 +98,7 @@ $$y = \beta_0 + \beta_1 x_1 + \cdots + \beta_n x_n + \epsilon$$
 * **Árvores de Decisão (`DecisionTreeRegressor`):** Modelo não paramétrico com profundidade controlada (`max_leaf_nodes=6`) para permitir inspeção direta das regras de partição dos nós, bem como modelo complexo com mais nós folha para comparação.
 * **Modelos Aditivos Generalizados (GAMs - `pygam`):** Ajuste de splines penalizadas lineares $s(x)$ para as variáveis contínuas e termos lineares $l(x)$ para as variáveis binárias:
 
-$$y = \beta_0 + \sum_{i=0}^{3} s_i(x_i) + \sum_{j} \beta_j \cdot \text{site}_j$$
+$$g(E[y|X]) = \beta_0 + f_1(x_{1}) + \cdots + f_n(x_{n}) = \beta_0 + \sum_{i=1}^n f_i(x_{i})$$
 
 ---
 <a id="ferramentas-de-explicabilidade-xai"></a>
